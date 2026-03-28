@@ -1,3 +1,5 @@
+<img src="https://github.com/user-attachments/assets/3c039098-878c-4a03-8094-f96c5aeb3d91" width=30% />
+
 # DALIA Scale
 Welcome to the official repository of the DALIA Scale. DALIA is an open-source, evolving matrix designed to quantify and qualify the level of Artificial Intelligence (AI) intervention in creative processes.
 
