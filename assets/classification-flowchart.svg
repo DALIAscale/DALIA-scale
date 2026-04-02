@@ -1,0 +1,146 @@
+<svg viewBox="0 0 680 870" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+
+<rect width="680" height="870" fill="#FAFAF9" rx="10"/>
+
+<defs>
+  <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 7 2.5, 0 5" fill="#666"/>
+  </marker>
+</defs>
+
+<!-- START -->
+<rect x="190" y="18" width="160" height="36" rx="18" fill="#111"/>
+<text x="270" y="41" text-anchor="middle" fill="white" font-size="13" font-weight="500">Start</text>
+<line x1="270" y1="54" x2="270" y2="90" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+<!-- Q0: any AI? -->
+<rect x="110" y="92" width="320" height="52" rx="6" fill="#F0EEE8" stroke="#CCC" stroke-width="0.8"/>
+<text x="270" y="114" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Does the workflow use any AI tools?</text>
+<text x="270" y="133" text-anchor="middle" fill="#666" font-size="10">analytical or generative</text>
+
+<!-- Q0 No → D0 -->
+<line x1="430" y1="118" x2="480" y2="118" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="112" text-anchor="middle" fill="#666" font-size="10">No</text>
+<rect x="482" y="100" width="90" height="36" rx="18" fill="#1a1a1a"/>
+<text x="527" y="116" text-anchor="middle" fill="white" font-size="12" font-weight="700">D0</text>
+<text x="527" y="129" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Manual</text>
+
+<!-- Q0 Yes → Q1 -->
+<line x1="270" y1="144" x2="270" y2="184" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="168" fill="#666" font-size="10">Yes</text>
+
+<!-- Q1: analytical only? -->
+<rect x="110" y="186" width="320" height="52" rx="6" fill="#F0EEE8" stroke="#CCC" stroke-width="0.8"/>
+<text x="270" y="208" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Are all AI tools strictly analytical?</text>
+<text x="270" y="226" text-anchor="middle" fill="#666" font-size="10">no content generation of any kind</text>
+
+<!-- Q1 Yes → D1 -->
+<line x1="430" y1="212" x2="480" y2="212" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="206" text-anchor="middle" fill="#666" font-size="10">Yes</text>
+<rect x="482" y="194" width="90" height="36" rx="18" fill="#059669"/>
+<text x="527" y="210" text-anchor="middle" fill="white" font-size="12" font-weight="700">D1</text>
+<text x="527" y="223" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Tool-Assisted</text>
+
+<!-- Q1 No → Q2 -->
+<line x1="270" y1="238" x2="270" y2="284" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="265" fill="#666" font-size="10">No — assess 3 dimensions</text>
+
+<!-- Q2: APPROVAL -->
+<rect x="90" y="286" width="340" height="56" rx="6" fill="#FFF5EC" stroke="#E8C9AA" stroke-width="0.8"/>
+<text x="100" y="304" fill="#9A6040" font-size="9" font-weight="500" letter-spacing="0.5">APPROVAL</text>
+<text x="270" y="320" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Who makes the final call on what is kept?</text>
+<text x="270" y="336" text-anchor="middle" fill="#666" font-size="10">AI defines meaning vs. human retains final authority</text>
+
+<!-- Q2 AI meaning → D5 -->
+<line x1="430" y1="314" x2="480" y2="314" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="308" text-anchor="middle" fill="#666" font-size="9">AI meaning</text>
+<rect x="482" y="296" width="90" height="36" rx="18" fill="#EF4444"/>
+<text x="527" y="312" text-anchor="middle" fill="white" font-size="12" font-weight="700">D5</text>
+<text x="527" y="325" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Autonomous</text>
+
+<!-- Q2 Human → Q3 -->
+<line x1="270" y1="342" x2="270" y2="388" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="370" fill="#666" font-size="10">Human authority</text>
+
+<!-- Q3: EXECUTION -->
+<rect x="90" y="390" width="340" height="56" rx="6" fill="#FFF5EC" stroke="#E8C9AA" stroke-width="0.8"/>
+<text x="100" y="408" fill="#9A6040" font-size="9" font-weight="500" letter-spacing="0.5">EXECUTION</text>
+<text x="270" y="424" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Who creates the work or bulk of its content?</text>
+<text x="270" y="440" text-anchor="middle" fill="#666" font-size="10">AI shapes the substance vs. human creates</text>
+
+<!-- Q3 AI meaning → D4 -->
+<line x1="430" y1="418" x2="480" y2="418" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="412" text-anchor="middle" fill="#666" font-size="9">AI meaning</text>
+<rect x="482" y="400" width="90" height="36" rx="18" fill="#F075AE"/>
+<text x="527" y="416" text-anchor="middle" fill="white" font-size="12" font-weight="700">D4</text>
+<text x="527" y="429" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">AI-Directed</text>
+
+<!-- Q3 Human → Q4 -->
+<line x1="270" y1="446" x2="270" y2="492" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="474" fill="#666" font-size="10">Human meaning</text>
+
+<!-- Q4: IDEATION -->
+<rect x="90" y="494" width="340" height="56" rx="6" fill="#FFF5EC" stroke="#E8C9AA" stroke-width="0.8"/>
+<text x="100" y="512" fill="#9A6040" font-size="9" font-weight="500" letter-spacing="0.5">IDEATION</text>
+<text x="270" y="528" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Who originates the creative idea?</text>
+<text x="270" y="544" text-anchor="middle" fill="#666" font-size="10">AI steers the concept vs. human defines it</text>
+
+<!-- Q4 AI meaning → D3 -->
+<line x1="430" y1="522" x2="480" y2="522" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="516" text-anchor="middle" fill="#666" font-size="9">AI meaning</text>
+<rect x="482" y="504" width="90" height="36" rx="18" fill="#9333EA"/>
+<text x="527" y="520" text-anchor="middle" fill="white" font-size="12" font-weight="700">D3</text>
+<text x="527" y="533" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Guided</text>
+
+<!-- Q4 Human → Q5 -->
+<line x1="270" y1="550" x2="270" y2="596" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="578" fill="#666" font-size="10">Human meaning</text>
+
+<!-- Q5: Approval fully human? -->
+<rect x="90" y="598" width="340" height="56" rx="6" fill="#F0EEE8" stroke="#CCC" stroke-width="0.8"/>
+<text x="270" y="621" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Is Approval entirely human?</text>
+<text x="270" y="639" text-anchor="middle" fill="#666" font-size="10">no generative AI in the approval step</text>
+
+<!-- Q5 No → D3 (H+AI in approval) -->
+<line x1="430" y1="626" x2="480" y2="626" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="455" y="620" text-anchor="middle" fill="#666" font-size="9">No</text>
+<rect x="482" y="608" width="90" height="36" rx="18" fill="#9333EA"/>
+<text x="527" y="624" text-anchor="middle" fill="white" font-size="12" font-weight="700">D3</text>
+<text x="527" y="637" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Guided</text>
+
+<!-- Q5 Yes → Q6 -->
+<line x1="270" y1="654" x2="270" y2="698" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="681" fill="#666" font-size="10">Yes</text>
+
+<!-- Q6: any generative AI in Ideation or Execution? -->
+<rect x="90" y="700" width="340" height="58" rx="6" fill="#F0EEE8" stroke="#CCC" stroke-width="0.8"/>
+<text x="270" y="721" text-anchor="middle" fill="#222" font-size="12" font-weight="500">Does generative AI contribute to Ideation</text>
+<text x="270" y="737" text-anchor="middle" fill="#222" font-size="12" font-weight="500">or Execution without altering meaning?</text>
+<text x="270" y="752" text-anchor="middle" fill="#666" font-size="10">meaning stays entirely human throughout</text>
+
+<!-- Q6 Yes → D2 -->
+<line x1="270" y1="758" x2="270" y2="800" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="279" y="784" fill="#666" font-size="10">Yes</text>
+<rect x="200" y="802" width="140" height="36" rx="18" fill="#2563EB"/>
+<text x="270" y="818" text-anchor="middle" fill="white" font-size="12" font-weight="700">D2</text>
+<text x="270" y="831" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Augmented</text>
+
+<!-- D2 note -->
+<text x="270" y="856" text-anchor="middle" fill="#AAA" font-size="9">AI in 1 or more dimensions — meaning is fully human</text>
+
+<!-- Legend -->
+<text x="527" y="700" fill="#AAA" font-size="9" text-anchor="middle">Levels</text>
+<rect x="482" y="708" width="90" height="22" rx="11" fill="#1a1a1a"/>
+<text x="527" y="723" text-anchor="middle" fill="white" font-size="10" font-weight="700">D0 Manual</text>
+<rect x="482" y="736" width="90" height="22" rx="11" fill="#059669"/>
+<text x="527" y="751" text-anchor="middle" fill="white" font-size="10" font-weight="700">D1 Tool-Assisted</text>
+<rect x="482" y="764" width="90" height="22" rx="11" fill="#2563EB"/>
+<text x="527" y="779" text-anchor="middle" fill="white" font-size="10" font-weight="700">D2 Augmented</text>
+<rect x="482" y="792" width="90" height="22" rx="11" fill="#9333EA"/>
+<text x="527" y="807" text-anchor="middle" fill="white" font-size="10" font-weight="700">D3 Guided</text>
+<rect x="482" y="820" width="90" height="22" rx="11" fill="#F075AE"/>
+<text x="527" y="835" text-anchor="middle" fill="white" font-size="10" font-weight="700">D4 AI-Directed</text>
+<rect x="482" y="848" width="90" height="22" rx="11" fill="#EF4444"/>
+<text x="527" y="863" text-anchor="middle" fill="white" font-size="10" font-weight="700">D5 Autonomous</text>
+
+</svg>
