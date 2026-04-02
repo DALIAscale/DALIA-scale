@@ -1,4 +1,6 @@
-<img src="https://github.com/user-attachments/assets/3c039098-878c-4a03-8094-f96c5aeb3d91" width=30% />
+<img width=30% alt="logo-full-orange" src="https://github.com/user-attachments/assets/458cc0b4-d6eb-473c-9a7e-62d22161f53f" />
+
+
 
 # DALIA Scale
 Welcome to the official repository of the DALIA Scale. DALIA is an open-source, evolving matrix designed to quantify and qualify the level of Artificial Intelligence (AI) intervention in creative processes.
@@ -16,11 +18,8 @@ As AI blurs the line between human agency and computational execution, tradition
 | D4 | AI-Generated (Human Directed) | Human as Art Director. The AI does the creative and production work, while the human gives orders and judges the results. | AI under Human direction | AI (creates the bulk of the work) | Human (picks the best option or makes tiny adjustments) | Using a generated image as-is; having an AI write a full blog post and only changing a few words; vibe coding without human code interventions. |
 | D5 | Fully Autonomous | 100% AI. The human just presses "start" or sets up a system. The AI systems operate independently to handle the task. | AI | AI | None (used exactly as the AI made it) | A news bot that automatically writes and posts updates on social media; an AI generating endless background music on its own. |
 
-_(Note: We will expand this document through community RFCs to include specific criteria for visual arts, music production, software engineering, and literature)._
-	
-	
 ## Documentation
-Read the full [SPECIFICATION.md](SPECIFICATION.md) for detailed criteria across different creative disciplines.
+Read the full [SPECIFICATION.md](SPECIFICATION.md) for detailed criteria across different creative approaches.
 
 Read [GOVERNANCE.md](GOVERNANCE.md) to understand how this standard is managed.
 
